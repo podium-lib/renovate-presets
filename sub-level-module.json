@@ -17,12 +17,18 @@
       }
     },
     {
+      "groupName": "Podium packages",
+      "matchPackagePatterns": ["^@podium/"]
+    },
+    {
       "groupName": "Semantic Release packages",
-      "packagePatterns": ["^@semantic-release/", "semantic-release"]
+      "matchDepTypes": ["devDependencies"],
+      "matchPackagePatterns": ["^@semantic-release/", "semantic-release"]
     },
     {
       "groupName": "ESlint and Prettier packages",
-      "packagePatterns": [
+      "matchDepTypes": ["devDependencies"],
+      "matchPackagePatterns": [
         "eslint-config-airbnb-base",
         "eslint-config-prettier",
         "eslint-plugin-prettier",
@@ -31,10 +37,6 @@
         "prettier",
         "eslint"
       ]
-    },
-    {
-      "groupName": "Podium packages",
-      "packagePatterns": ["^@podium/"]
     }
   ]
 }
